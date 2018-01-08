@@ -25,6 +25,7 @@ Route::prefix('admin')->namespace('Admin')->group(function () {
     //文章路由设置
     Route::prefix('article')->group(function () {
         Route::get('index', 'ArticleController@index');
+        Route::get('index2', 'ArticleController@index2');
         Route::get('create', 'ArticleController@create');
         Route::post('store', 'ArticleController@store');
     });

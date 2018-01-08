@@ -12,13 +12,25 @@ class ArticleController extends Controller
      * Display a listing of the resource.
      * @return \Illuminate\Http\Response
      */
+    public $user;
+    public function __construct()
+    {
+        $this->user = new User();
+    }
+
     public function index()
     {
         $user = new User();
         $userlist  = $user->getUserList();
         return view('user/index',['users'=>$userlist]);
     }
-
+    //获取所有数据并分页
+    public function index2()
+    {
+        $user = new User();
+        $userlist  = $user->getUserList2();
+        return view('user/index2',['users'=>$userlist]);
+    }
     /**
      * Show the form for creating a new resource.
      *
