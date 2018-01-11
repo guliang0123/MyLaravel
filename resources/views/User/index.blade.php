@@ -9,7 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
+        {{--引入资源文件--}}
+        <script src="{{ URL::asset('/js/jquery-3.2.1.min.js') }}"></script>
     </head>
     <body>
 
@@ -26,4 +27,7 @@
         </table>
 
     </body>
+    <script>
+        alert($);
+    </script>
 </html>
