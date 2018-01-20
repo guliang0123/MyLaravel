@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Laravel</title>
 
         <!-- Fonts -->
@@ -13,7 +12,6 @@
         <script src="{{ URL::asset('/js/jquery-3.2.1.min.js') }}"></script>
     </head>
     <body>
-
         <table cellspacing="0" border="1" cellpadding="0" width="600px" align="center">
             <caption style="color:darkred;">用户列表</caption>
             @foreach($users as $list)
@@ -25,9 +23,5 @@
             </tr>
             @endforeach
         </table>
-
     </body>
-    <script>
-        alert($);
-    </script>
 </html>
